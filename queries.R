@@ -21,7 +21,7 @@ paises <-  DataDB %>% filter(Language  == "Spanish" )
 paises
 
 ggplot(paises[, ], 
-       aes(x = Percentage , y = CountryCode , colour =paises$ IsOfficial )) + 
+       aes(x = Percentage , y = CountryCode , colour =IsOfficial )) + 
   geom_point()  + 
   theme_dark() + ggtitle("paises")
 
